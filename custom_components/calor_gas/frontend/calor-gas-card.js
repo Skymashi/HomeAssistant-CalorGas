@@ -48,7 +48,7 @@ export class CalorGasCard extends HTMLElement {
     if (typeof threshold !== "number" || !Number.isFinite(threshold) || threshold < 0 || threshold > 100) {
       throw new Error("Low-level threshold must be between 0 and 100.");
     }
-    this._config = {name: "Calor Gas", show_details: true, compact: false, ...config};
+    this._config = {name: "Calor Gas", show_details: true, show_links: false, compact: false, ...config};
     this._render();
   }
   set hass(value) { this._hass = value; this._states = value?.states; this._render(); }
@@ -128,14 +128,23 @@ export class CalorGasCard extends HTMLElement {
       ]) list.append(element("dt", "", label), element("dd", "", value));
       details.append(list); card.append(details);
     }
-    const links = element("div", "links");
-    const portal = element("a", "", "MyCalorGas"); portal.href = "https://www.mycalorgas.com/TankDelivery";
-    portal.target = "_blank"; portal.rel = "noopener noreferrer";
-    const setup = element("a", "", "Integration settings"); setup.href = "/config/integrations/integration/calor_gas";
-    links.append(portal, setup); card.append(links);
+    if (this._config.show_links) {
+      const links = element("div", "links");
+      const portal = element("a", "", "MyCalorGas"); portal.href = "https://www.mycalorgas.com/TankDelivery";
+      portal.target = "_blank"; portal.rel = "noopener noreferrer";
+      const setup = element("a", "", "Integration settings"); setup.href = "/config/integrations/integration/calor_gas";
+      links.append(portal, setup); card.append(links);
+    }
     const style = element("style"); style.textContent = STYLES;
     this.shadowRoot.replaceChildren(style, card);
   }
+}
+
+class CalorGasCardWithLinks extends CalorGasCard {
+  static getStubConfig(hass) {
+    return {...super.getStubConfig(hass), type: "custom:calor-gas-card-with-links", show_links: true};
+  }
+  setConfig(config) { super.setConfig({show_links: true, ...config}); }
 }
 
 class CalorGasCardEditor extends HTMLElement {
@@ -150,13 +159,14 @@ class CalorGasCardEditor extends HTMLElement {
       {name: "name", selector: {text: {}}},
       {name: "compact", selector: {boolean: {}}},
       {name: "show_details", selector: {boolean: {}}},
+      {name: "show_links", selector: {boolean: {}}},
       {name: "low_threshold", selector: {number: {min: 0, max: 100, step: 1, mode: "box", unit_of_measurement: "%"}}},
     ];
     const labels = {entity: "Tank level sensor", name: "Card title", compact: "Compact layout",
-      show_details: "Show reading details", low_threshold: "Low-level warning below"};
+      show_details: "Show reading details", show_links: "Show quick links", low_threshold: "Low-level warning below"};
     form.computeLabel = schema => labels[schema.name] || schema.name;
     form.addEventListener("value-changed", event => {
-      event.stopPropagation(); this._config = {...event.detail.value, type: "custom:calor-gas-card"};
+      event.stopPropagation(); this._config = {...event.detail.value, type: this._config.type || "custom:calor-gas-card"};
       this.dispatchEvent(new CustomEvent("config-changed", {detail: {config: this._config}, bubbles: true, composed: true}));
     });
     this.shadowRoot.replaceChildren(form);
@@ -164,8 +174,13 @@ class CalorGasCardEditor extends HTMLElement {
 }
 
 if (!customElements.get("calor-gas-card")) customElements.define("calor-gas-card", CalorGasCard);
+if (!customElements.get("calor-gas-card-with-links")) customElements.define("calor-gas-card-with-links", CalorGasCardWithLinks);
 if (!customElements.get("calor-gas-card-editor")) customElements.define("calor-gas-card-editor", CalorGasCardEditor);
 window.customCards = window.customCards || [];
 if (!window.customCards.some(card => card.type === "calor-gas-card")) window.customCards.push({
-  type: "calor-gas-card", name: "Calor Gas tank", description: "Tank level, remaining days and saved readings during portal outages.", preview: true,
+  type: "calor-gas-card", name: "Calor Gas tank", description: "Tank level, remaining days and saved readings without footer links.", preview: true,
+});
+
+if (!window.customCards.some(card => card.type === "calor-gas-card-with-links")) window.customCards.push({
+  type: "calor-gas-card-with-links", name: "Calor Gas tank with links", description: "Tank readings with MyCalorGas and integration settings links.", preview: true,
 });
