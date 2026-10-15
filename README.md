@@ -11,7 +11,7 @@ See your MyCalorGas tank level, estimated days remaining and delivery status in 
 
 This is an **unofficial community integration**, with original artwork. It is not affiliated with or endorsed by Calor. It is a custom integration installed through HACS or manually; it does not require a Supervisor add-on.
 
-**First public beta:** `1.1.0b1`. Available as a HACS custom repository. It has not been accepted into the default HACS catalogue.
+**First public beta:** `1.1.0b1`. Available as a HACS custom repository.
 
 ## Features
 
