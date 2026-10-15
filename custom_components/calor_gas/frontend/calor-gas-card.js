@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 Skymashi
+// SPDX-License-Identifier: GPL-3.0-only
+
 import {tankModel, displayDate, displaySync} from "./card-model.js";
 
 const TANK = '<svg viewBox="0 0 160 130" aria-hidden="true"><defs><clipPath id="gas-body"><rect x="9" y="42" width="142" height="66" rx="33"/></clipPath><linearGradient id="gas-metal" x2="0" y2="1"><stop stop-color="#f7fafc"/><stop offset="1" stop-color="#c9d1d8"/></linearGradient></defs><path d="M39 106v15m82-15v15" stroke="#b6c0c9" stroke-width="6" stroke-linecap="round"/><rect x="67" y="24" width="26" height="20" rx="5" fill="#e7ecef" stroke="#b6c0c9" stroke-width="2"/><path d="M74 24v-5h12v5" fill="none" stroke="#b6c0c9" stroke-width="3"/><rect x="9" y="42" width="142" height="66" rx="33" fill="url(#gas-metal)"/><g clip-path="url(#gas-body)"><rect id="gas-fill" x="9" y="108" width="142" height="0" fill="#df352f"/><path d="M12 50h136" stroke="#ffffff" opacity=".65" stroke-width="3"/></g><rect x="9" y="42" width="142" height="66" rx="33" fill="none" stroke="#a8b3bc" stroke-width="2"/></svg>';

@@ -8,7 +8,7 @@
 [![Validation](https://github.com/Skymashi/HomeAssistant-CalorGas/actions/workflows/validate.yml/badge.svg)](https://github.com/Skymashi/HomeAssistant-CalorGas/actions/workflows/validate.yml)
 [![HACS Custom](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://www.hacs.xyz/docs/faq/custom_repositories/)
 [![Release](https://img.shields.io/github/v/release/Skymashi/HomeAssistant-CalorGas?include_prereleases)](https://github.com/Skymashi/HomeAssistant-CalorGas/releases)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 
 See your MyCalorGas tank level, estimated days remaining and delivery status in Home Assistant. A bundled tank card provides desktop, phone and compact layouts, with a visual editor and clear indicators when the portal is unavailable.
 
@@ -211,4 +211,6 @@ The backend builds on a privately used installation. The first public beta adds 
 
 ## License
 
-[MIT](LICENSE). Calor and Home Assistant names belong to their respective owners. The tank artwork and card in this repository are original community assets.
+Copyright 2026 Skymashi. Code, documentation and original artwork are licensed under the **[GNU General Public License v3.0 only](LICENSE)** (`GPL-3.0-only`). Distributions must comply with its source, notice and licence requirements. A copy of the licence is also included inside the installable integration and manual ZIP.
+
+See [acknowledgements](ACKNOWLEDGEMENTS.md) for project references. Calor and Home Assistant names belong to their respective owners; their trademarks are not granted by this licence. The initial pre-release Git history carried MIT notices; this licence change applies to the current code and forthcoming release and does not revoke earlier grants.

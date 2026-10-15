@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Skymashi
+# SPDX-License-Identifier: GPL-3.0-only
+
 """Portal estimates and source dates, with explicit freshness metadata."""
 
 from homeassistant.components.sensor import SensorDeviceClass, SensorEntity, SensorEntityDescription, SensorStateClass

@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Skymashi
+# SPDX-License-Identifier: GPL-3.0-only
+
 """Read-only Calor Gas tank monitoring."""
 
 from homeassistant.config_entries import ConfigEntry

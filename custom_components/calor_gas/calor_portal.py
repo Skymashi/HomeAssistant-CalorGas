@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Skymashi
+# SPDX-License-Identifier: GPL-3.0-only
+
 """Read MyCalorGas through its normal login, using an isolated HTTP session.
 
 No portal account changes or orders are made. Credentials, cookies, tokens and
