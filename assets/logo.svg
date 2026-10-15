@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160"><g transform="translate(0,-8) scale(.65)">
+<defs><linearGradient id="metal" x2="0" y2="1"><stop stop-color="#f5f8fa"/><stop offset="1" stop-color="#bfcbd4"/></linearGradient><clipPath id="body"><rect x="26" y="99" width="204" height="98" rx="49"/></clipPath></defs>
+<path d="M67 192v22m122-22v22" stroke="#8d9eaa" stroke-width="9" stroke-linecap="round"/>
+<rect x="109" y="73" width="38" height="29" rx="7" fill="#e8eef2" stroke="#8d9eaa" stroke-width="4"/>
+<path d="M119 72V61h18v11" fill="none" stroke="#8d9eaa" stroke-width="5" stroke-linejoin="round"/>
+<rect x="26" y="99" width="204" height="98" rx="49" fill="url(#metal)"/>
+<g clip-path="url(#body)"><rect x="26" y="144" width="204" height="60" fill="#df352f"/><path d="M32 109h192" stroke="#fff" stroke-width="4" opacity=".7"/></g>
+<rect x="26" y="99" width="204" height="98" rx="49" fill="none" stroke="#8d9eaa" stroke-width="4"/>
+<path d="M194 23c-2 19-22 23-22 40 0 13 10 22 22 22s22-9 22-22c0-17-11-28-22-40Z" fill="#087da7"/>
+<path d="M195 51c-1 9-10 12-10 20 0 6 4 10 10 10s10-4 10-10c0-8-5-14-10-20Z" fill="#69d4ed"/>
+</g><text x="184" y="77" font-family="Segoe UI,Arial,sans-serif" font-size="55" font-weight="700" fill="#182a37">Calor Gas</text><text x="186" y="113" font-family="Segoe UI,Arial,sans-serif" font-size="21" fill="#637988">for Home Assistant</text></svg>

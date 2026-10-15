@@ -1,0 +1,19 @@
+{
+  "domain": "calor_gas",
+  "name": "Calor Gas",
+  "after_dependencies": [
+    "frontend",
+    "http",
+    "lovelace"
+  ],
+  "codeowners": [
+    "@Skymashi"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/Skymashi/HomeAssistant-CalorGas",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/Skymashi/HomeAssistant-CalorGas/issues",
+  "requirements": [],
+  "version": "1.1.0b1"
+}
