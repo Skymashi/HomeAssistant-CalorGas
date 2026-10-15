@@ -98,9 +98,9 @@ A first installation needs one successful reading. If Calor is unavailable befor
 For normal storage-managed dashboard resources, the integration registers its bundled JavaScript module automatically.
 
 1. Open your dashboard and select **Edit dashboard → Add card**.
-2. Select **Calor Gas Tank** (refresh the browser if it does not appear).
+2. Select **Calor Gas tank** for a clean layout, or **Calor Gas tank with links** for MyCalorGas and integration settings shortcuts (refresh the browser if they do not appear). Both follow the active Home Assistant light or dark theme.
 3. Choose the **Tank level** entity belonging to this integration in the visual editor.
-4. Adjust the title, compact layout, details and low-level threshold as desired, then save.
+4. Adjust the title, compact layout, details, **Show quick links** and low-level threshold as desired, then save.
 
 Only one entity is needed; forecast and freshness information are read from that entity's attributes. Entity names can vary between installations, so use your actual entity ID.
 
@@ -119,9 +119,22 @@ low_threshold: 20
 | `name` | `Calor Gas` | Card title |
 | `compact` | `false` | Small layout suitable for a narrow dashboard column |
 | `show_details` | `true` | Expandable reading, sync, run-out and delivery details |
+| `show_links` | `false` (`true` for the with-links preset) | MyCalorGas and integration settings shortcuts; hidden in compact mode |
 | `low_threshold` | `20` | Low indication when level is strictly below this percentage |
 
-Click or press Enter on the tank to open Home Assistant's native more-info dialog. The MyCalorGas link opens the provider website. The settings link opens the integration settings. The card sends no credentials and loads no external scripts.
+For the with-links preset in YAML, use `type: custom:calor-gas-card-with-links`, or set `show_links: true` on the standard card.
+
+Click or press Enter on the tank to open Home Assistant's native more-info dialog. Manage the integration through **Settings → Devices & services → Calor Gas**. The card sends no credentials and loads no external scripts.
+
+### Card layout choices
+
+These previews use synthetic demonstration readings. Both card presets follow your Home Assistant theme.
+
+| Without links | With links |
+| --- | --- |
+| ![Light without links](docs/images/healthy.png) | ![Light with links](docs/images/with-links.png) |
+| ![Dark without links](docs/images/dark.png) | ![Dark with links](docs/images/dark-with-links.png) |
+
 
 ### Manual card resource / YAML dashboards
 
@@ -141,6 +154,10 @@ lovelace:
 ```
 
 YAML resources are not changed automatically. Update the versioned URL when upgrading. No separate frontend download or HACS dashboard repository is needed.
+
+### HACS catalogue icon
+
+The integration includes its own icons and light/dark logos in `custom_components/calor_gas/brand/`. HACS 2.0.5 still loads catalogue icons from the legacy Home Assistant brands server, so its store list can show an unavailable-icon placeholder for new custom integrations. This is tracked by [HACS frontend #937](https://github.com/hacs/frontend/pull/937) and [HACS integration #5171](https://github.com/hacs/integration/issues/5171). It does not indicate a failed installation. Home Assistant uses the bundled assets after installation and restart.
 
 ## Sensors and freshness
 
