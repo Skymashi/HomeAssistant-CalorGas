@@ -53,7 +53,7 @@ Development is based on the MyCalorGas portal used in Ireland. Other Calor websi
 5. **Restart Home Assistant**.
 6. Continue with [Connect your account](#connect-your-account).
 
-Adding a custom repository makes it available in your own HACS installation. Default catalogue inclusion requires a separate HACS maintainer review.
+Adding a custom repository makes it available in your own HACS installation.
 
 ## Manual installation
 
