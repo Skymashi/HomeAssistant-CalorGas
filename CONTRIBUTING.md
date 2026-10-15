@@ -10,4 +10,6 @@ The Python test suite uses HA adapters; do not describe it as a full Home Assist
 
 All HACS and Hassfest checks must pass without ignores. Changes to the version require matching `manifest.json`, `const.py`, README resource URLs and changelog updates. Keep `strings.json` and `translations/en.json` in sync. The JavaScript package uses the corresponding npm prerelease version.
 
-Contributions are distributed under the repository's MIT license.
+Contributions are distributed under the repository's GNU GPL v3.0-only license.
+
+Preserve upstream copyright and licence notices when proposing any third-party code or assets; identify their origin and compatibility in the PR. Do not copy provider branding or imply Calor, Home Assistant or HACS endorsement. Keep GPL SPDX identifiers on project source files.

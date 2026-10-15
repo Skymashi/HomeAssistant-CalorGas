@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Skymashi
+# SPDX-License-Identifier: GPL-3.0-only
+
 """Build a manual-install ZIP containing only the public integration."""
 
 from pathlib import Path

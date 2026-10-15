@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Skymashi
+# SPDX-License-Identifier: GPL-3.0-only
+
 """Validate a last-known-good snapshot without retaining login material."""
 
 from datetime import date, datetime

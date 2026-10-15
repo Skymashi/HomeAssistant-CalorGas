@@ -2,7 +2,7 @@
 
 ## 1.1.0b1 — 2026-10-15
 
-First public beta, packaged as a HACS custom integration.
+First public beta, packaged as a HACS custom integration under GNU GPL v3.0 only.
 
 - Native email/password setup, reauthentication and credential reconfiguration.
 - Six shared sensors and fixed six-hour polling.

@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Skymashi
+# SPDX-License-Identifier: GPL-3.0-only
+
 """Validate credentials in Home Assistant's password-masked setup form."""
 
 from __future__ import annotations

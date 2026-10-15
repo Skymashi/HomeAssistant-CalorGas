@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Skymashi
+# SPDX-License-Identifier: GPL-3.0-only
+
 """Check scoped frontend resource management and privacy-safe diagnostics."""
 
 import importlib
