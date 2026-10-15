@@ -3,6 +3,7 @@
   "name": "Calor Gas",
   "after_dependencies": [
     "frontend",
+    "http",
     "lovelace"
   ],
   "codeowners": [
