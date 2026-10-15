@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2026 Skymashi
+// SPDX-FileCopyrightText: 2026 MBS Integrations
 // SPDX-License-Identifier: GPL-3.0-only
 
 const fs = require("node:fs"), path = require("node:path"), http = require("node:http"), assert = require("node:assert/strict");

@@ -5,9 +5,9 @@
 
 # Calor Gas for Home Assistant
 
-[![Validation](https://github.com/Skymashi/HomeAssistant-CalorGas/actions/workflows/validate.yml/badge.svg)](https://github.com/Skymashi/HomeAssistant-CalorGas/actions/workflows/validate.yml)
+[![Validation](https://github.com/mbsintegrations/HomeAssistant-CalorGas/actions/workflows/validate.yml/badge.svg)](https://github.com/mbsintegrations/HomeAssistant-CalorGas/actions/workflows/validate.yml)
 [![HACS Custom](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://www.hacs.xyz/docs/faq/custom_repositories/)
-[![Release](https://img.shields.io/github/v/release/Skymashi/HomeAssistant-CalorGas?include_prereleases)](https://github.com/Skymashi/HomeAssistant-CalorGas/releases)
+[![Release](https://img.shields.io/github/v/release/mbsintegrations/HomeAssistant-CalorGas?include_prereleases)](https://github.com/mbsintegrations/HomeAssistant-CalorGas/releases)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 
 See your MyCalorGas tank level, estimated days remaining and delivery status in Home Assistant. A bundled tank card provides desktop, phone and compact layouts, with a visual editor and clear indicators when the portal is unavailable.
@@ -51,7 +51,7 @@ Development is based on the MyCalorGas portal used in Ireland. Other Calor websi
 
 1. Install and configure [HACS](https://www.hacs.xyz/docs/use/) if needed.
 2. In **HACS**, open the top-right menu and choose **Custom repositories**.
-3. Add `https://github.com/Skymashi/HomeAssistant-CalorGas` with type **Integration**.
+3. Add `https://github.com/mbsintegrations/HomeAssistant-CalorGas` with type **Integration**.
 4. Find **Calor Gas**, open it and select **Download**. For the first beta, select `1.1.0b1` if offered, enable beta versions if needed, or select the default branch.
 5. **Restart Home Assistant**.
 6. Continue with [Connect your account](#connect-your-account).
@@ -60,7 +60,7 @@ Adding a custom repository makes it available in your own HACS installation. Def
 
 ## Manual installation
 
-1. Download **`calor_gas.zip`** from a [release](https://github.com/Skymashi/HomeAssistant-CalorGas/releases).
+1. Download **`calor_gas.zip`** from a [release](https://github.com/mbsintegrations/HomeAssistant-CalorGas/releases).
 2. Extract it into the `custom_components` folder inside your Home Assistant configuration directory. Create that folder if needed.
 3. Confirm this structure; avoid a second nested `calor_gas` directory:
 
@@ -211,6 +211,6 @@ The backend builds on a privately used installation. The first public beta adds 
 
 ## License
 
-Copyright 2026 Skymashi. Code, documentation and original artwork are licensed under the **[GNU General Public License v3.0 only](LICENSE)** (`GPL-3.0-only`). Distributions must comply with its source, notice and licence requirements. A copy of the licence is also included inside the installable integration and manual ZIP.
+Copyright 2026 MBS Integrations. Code, documentation and original artwork are licensed under the **[GNU General Public License v3.0 only](LICENSE)** (`GPL-3.0-only`). Distributions must comply with its source, notice and licence requirements. A copy of the licence is also included inside the installable integration and manual ZIP.
 
 See [acknowledgements](ACKNOWLEDGEMENTS.md) for project references. Calor and Home Assistant names belong to their respective owners; their trademarks are not granted by this licence. The initial pre-release Git history carried MIT notices; this licence change applies to the current code and forthcoming release and does not revoke earlier grants.
