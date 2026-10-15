@@ -11,7 +11,7 @@ See your MyCalorGas tank level, estimated days remaining and delivery status in 
 
 This is an **unofficial community integration**, with original artwork. It is not affiliated with or endorsed by Calor. It is a custom integration installed through HACS or manually; it does not require a Supervisor add-on.
 
-**First public beta:** `1.1.0b1`. Available as a HACS custom repository. It has not been accepted into the default HACS catalogue.
+**First public beta:** `1.1.0b1`. Available as a HACS custom repository.
 
 ## Features
 
@@ -53,7 +53,7 @@ Development is based on the MyCalorGas portal used in Ireland. Other Calor websi
 5. **Restart Home Assistant**.
 6. Continue with [Connect your account](#connect-your-account).
 
-Adding a custom repository makes it available in your own HACS installation. Default catalogue inclusion requires a separate HACS maintainer review.
+Adding a custom repository makes it available in your own HACS installation.
 
 ## Manual installation
 
