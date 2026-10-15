@@ -1,0 +1,32 @@
+name: Bug report
+description: Report a Calor Gas integration or card problem
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include credentials, account numbers, raw authenticated HTML, backups or .storage files."
+  - type: input
+    id: versions
+    attributes:
+      label: Home Assistant and Calor Gas versions
+    validations:
+      required: true
+  - type: dropdown
+    id: install
+    attributes:
+      label: Installation method
+      options:
+        - HACS custom repository
+        - Manual
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened and what did you expect?
+      description: Include steps to reproduce and whether the MyCalorGas website works.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitized errors or integration diagnostics
+      description: Review all text before posting. Synthetic examples are preferable.

@@ -1,0 +1,42 @@
+{
+  "title": "Calor Gas",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect your Calor tank",
+        "description": "Sign in with your MyCalorGas account. Home Assistant checks your login and discovers the tank automatically. It reads the portal every six hours and keeps the last successful reading during an outage. Your password is stored by your Home Assistant installation and is sent only to MyCalorGas over HTTPS.",
+        "data": {
+          "username": "Calor email address",
+          "password": "Calor password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Sign in to Calor again",
+        "description": "Calor no longer accepts the stored login. Enter the current credentials for the same tank account.",
+        "data": {
+          "username": "Calor email address",
+          "password": "Calor password"
+        }
+      },
+      "reconfigure": {
+        "title": "Update the Calor login",
+        "description": "Enter the current login for the same tank account. Existing entity IDs, history and saved readings are retained.",
+        "data": {
+          "username": "Calor email address",
+          "password": "Calor password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Calor did not accept the login. Check your email address and password.",
+      "cannot_connect": "Home Assistant could not reach Calor. Please try again later.",
+      "portal_changed": "Home Assistant could not read the Calor portal: {detail}."
+    },
+    "abort": {
+      "already_configured": "This Calor tank is already connected.",
+      "unique_id_mismatch": "This login returned a different Calor tank account. The existing tank was not changed.",
+      "reauth_successful": "The Calor login has been updated.",
+      "reconfigure_successful": "The Calor login has been updated."
+    }
+  }
+}
