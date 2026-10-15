@@ -1,7 +1,4 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="custom_components/calor_gas/brand/dark_logo@2x.png">
-  <img alt="Calor Gas for Home Assistant" src="custom_components/calor_gas/brand/logo@2x.png" width="512">
-</picture>
+<img alt="Calor Gas logo" src="https://raw.githubusercontent.com/mbsintegrations/HomeAssistant-CalorGas/main/custom_components/calor_gas/brand/icon.png" width="112">
 
 # Calor Gas for Home Assistant
 
@@ -224,7 +221,7 @@ The Python suite exercises the real parser, cache, coordinator, sensors, credent
 
 GitHub Actions also run the official **HACS validator** and **Hassfest**, without ignored checks. See [HACS compliance and release checks](docs/HACS.md), [contributing](CONTRIBUTING.md), [changes](CHANGELOG.md) and [security reporting](SECURITY.md).
 
-The backend builds on a privately used installation. The first public beta adds reusable packaging and the card; adapter/browser tests are not a substitute for a fresh end-to-end Home Assistant acceptance test.
+Fresh Home Assistant 2026.10.1 acceptance checks verified installation through HACS, the native credential popup, a successful portal connection, all six sensors, local branding, persistent Store creation, automatic card resource registration, both card presets in the picker, visual editing and native more-info. Both presets were rendered in the native light and dark themes. Portal-outage and restart-cache behaviour are covered by the regression suite; physical tank accuracy is not verified by software tests.
 
 ## License
 
