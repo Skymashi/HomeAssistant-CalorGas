@@ -10,6 +10,8 @@
 [![Open HACS repository on Home Assistant](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=mbsintegrations&repository=HomeAssistant-CalorGas&category=integration)
 [![Add integration to Home Assistant](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=calor_gas)
 
+[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=flat&logo=paypal&logoColor=white)](https://paypal.me/mwahl1973)
+
 See your MyCalorGas tank level, estimated days remaining and delivery status in Home Assistant. A bundled tank card provides desktop, phone and compact layouts, with a visual editor and clear indicators when the portal is unavailable.
 
 This is an **unofficial community integration**, with original artwork. It is not affiliated with or endorsed by Calor. It is a custom integration installed through HACS or manually; it does not require a Supervisor add-on.
